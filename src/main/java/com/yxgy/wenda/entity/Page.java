@@ -29,6 +29,7 @@ public class Page {
     }
 
     public void setLimit(int limit) {
+        //允许查100条数据
         if (limit >= 1 && limit <= 100) {
             this.limit = limit;
         }

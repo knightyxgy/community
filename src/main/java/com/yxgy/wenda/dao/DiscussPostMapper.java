@@ -15,4 +15,10 @@ public interface DiscussPostMapper {
 
     //如果要动态查询，只有一个参数时必须要加@Param
     int selectDiscussPostRows(@Param("userId") int userId);
+
+    int insertDiscussPost(DiscussPost discussPost);
+
+    DiscussPost selectDiscussPostById(int id);
+
+    int updateCommentCount(int id, int commentCount);
 }
